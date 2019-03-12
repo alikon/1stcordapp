@@ -1,0 +1,14 @@
+2019-03-12 08:15:55,179 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
+2019-03-12 08:15:55,195 main WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
+
+   ______               __
+  / ____/     _________/ /___ _
+ / /     __  / ___/ __  / __ `/         It runs on the JVM because QuickBasic
+/ /___  /_/ / /  / /_/ / /_/ /          is apparently not 'professional' enough.
+\____/     /_/   \__,_/\__,_/
+
+--- Corda Open Source 3.2-corda (5ae8325) -----------------------------------------------
+
+
+Logs can be found in                    : c:\test\nodi\corda-banka_node\logs
+Database connection url is              : jdbc:h2:tcp://172.16.29.51:57702/node
