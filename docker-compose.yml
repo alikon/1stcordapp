@@ -18,7 +18,7 @@ services:
     image: corda/node:3.3
     container_name: notary
     volumes:
-      - ./nodes/notary/:/opt/corda/
+      - ./nodes/notary/node.conf:/opt/corda/node.conf
       - ./nodes/cordapps/:/opt/corda/cordapps/
       - ./nodes/notary/certificates/:/opt/corda/certificates/
       - ./nodes/notary/network-parameters:/opt/corda/network-parameters
@@ -41,7 +41,7 @@ services:
     image: corda/node:3.3
     container_name: banka
     volumes:
-      - ./nodes/banka/:/opt/corda/
+      - ./nodes/banka/node.conf:/opt/corda/node.conf
       - ./nodes/cordapps/:/opt/corda/cordapps/
       - ./nodes/banka/certificates/:/opt/corda/certificates/
       - ./nodes/banka/network-parameters:/opt/corda/network-parameters
@@ -64,7 +64,7 @@ services:
     image: corda/node:3.3
     container_name: bankb
     volumes:
-      - ./nodes/bankb/:/opt/corda/
+      - ./nodes/bankb/node.conf:/opt/corda/node.conf
       - ./nodes/cordapps/:/opt/corda/cordapps/
       - ./nodes/bankb/certificates/:/opt/corda/certificates/
       - ./nodes/bankb/network-parameters:/opt/corda/network-parameters
@@ -87,7 +87,7 @@ services:
     image: corda/node:3.3
     container_name: bankc
     volumes:
-      - ./nodes/bankc/:/opt/corda/
+      - ./nodes/bankc/node.conf:/opt/corda/node.conf
       - ./nodes/cordapps/:/opt/corda/cordapps/
       - ./nodes/bankc/certificates/:/opt/corda/certificates/
       - ./nodes/bankc/network-parameters:/opt/corda/network-parameters
